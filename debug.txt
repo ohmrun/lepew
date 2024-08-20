@@ -1,0 +1,880 @@
+ INFO global: Vagrant version: 2.4.1
+ INFO global: Ruby version: 3.1.4
+ INFO global: RubyGems version: 3.3.26
+ INFO global: VAGRANT_LOG="Info"
+ INFO global: VAGRANT_INSTALLER_VERSION="2"
+ INFO global: VAGRANT_EXECUTABLE="/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/bin/vagrant"
+ INFO global: VAGRANT_INSTALLER_ENV="1"
+ INFO global: VAGRANT_INSTALLER_EMBEDDED_DIR="/opt/vagrant/embedded"
+ WARN global: resolv replacement has not been enabled!
+ INFO manager: Registered plugin: Linux host
+ INFO manager: Registered plugin: Red Hat Enterprise Linux host
+ INFO manager: Registered plugin: Gentoo host
+ INFO manager: Registered plugin: FreeBSD host
+ INFO manager: Registered plugin: Void host
+ INFO manager: Registered plugin: Arch host
+ INFO manager: Registered plugin: BSD host
+ INFO manager: Registered plugin: SUSE host
+ INFO manager: Registered plugin: Mac OS X host
+ INFO manager: Registered plugin: Windows host
+ INFO manager: Registered plugin: null host
+ INFO manager: Registered plugin: Slackware host
+ INFO manager: Registered plugin: ALT Platform host
+ INFO manager: Registered plugin: puppet
+ INFO manager: Registered plugin: salt
+ INFO manager: Registered plugin: docker
+ INFO manager: Registered plugin: CFEngine Provisioner
+ INFO manager: Registered plugin: chef
+ INFO manager: Registered plugin: shell
+ INFO manager: Registered plugin: podman
+ INFO manager: Registered plugin: container
+ INFO manager: Registered plugin: file
+ INFO manager: Registered plugin: ansible
+ INFO manager: Registered plugin: RSync synced folders
+ INFO manager: Registered plugin: NFS synced folders
+ INFO manager: Registered plugin: SMB synced folders
+ INFO manager: Registered plugin: rdp command
+ INFO manager: Registered plugin: provision command
+ INFO manager: Registered plugin: halt command
+ INFO manager: Registered plugin: status command
+ INFO manager: Registered plugin: autocomplete command
+ INFO manager: Registered plugin: push command
+ INFO manager: Registered plugin: powershell command
+ INFO manager: Registered plugin: plugin command
+ INFO manager: Registered plugin: package command
+ INFO manager: Registered plugin: provider command
+ INFO manager: Registered plugin: version command
+ INFO manager: Registered plugin: help command
+ INFO manager: Registered plugin: start Vagrant server
+ INFO manager: Registered plugin: reload command
+ INFO manager: Registered plugin: snapshot command
+ INFO manager: Registered plugin: suspend command
+ INFO manager: Registered plugin: resume command
+ INFO manager: Registered plugin: vagrant-cloud
+ INFO manager: Registered plugin: ssh command
+ INFO manager: Registered plugin: destroy command
+ INFO manager: Registered plugin: winrm-config command
+ INFO manager: Registered plugin: box command
+ INFO manager: Registered plugin: up command
+ INFO manager: Registered plugin: winrm command
+ INFO manager: Registered plugin: list-commands command
+ INFO manager: Registered plugin: vagrant-login
+ INFO manager: Registered plugin: validate command
+ INFO manager: Registered plugin: port command
+ INFO manager: Registered plugin: upload command
+ INFO manager: Registered plugin: ssh-config command
+ INFO manager: Registered plugin: cap command
+ INFO manager: Registered plugin: init command
+ INFO manager: Registered plugin: global-status command
+ INFO manager: Registered plugin: Haiku guest
+ INFO manager: Registered plugin: SmartOS guest.
+ INFO manager: Registered plugin: Linux guest.
+ INFO manager: Registered plugin: Red Hat Enterprise Linux guest
+ INFO manager: Registered plugin: ESXi guest.
+ INFO manager: Registered plugin: NetBSD guest
+ INFO manager: Registered plugin: Solaris 11 guest.
+ INFO manager: Registered plugin: CoreOS guest
+ INFO manager: Registered plugin: DragonFly BSD guest
+ INFO manager: Registered plugin: OpenBSD guest
+ INFO manager: Registered plugin: Solaris guest.
+ INFO manager: Registered plugin: Kali guest
+ INFO manager: Registered plugin: Gentoo guest
+ INFO manager: Registered plugin: FreeBSD guest
+ INFO manager: Registered plugin: Atomic Host guest
+ INFO manager: Registered plugin: Debian guest
+ INFO manager: Registered plugin: Arch guest
+ INFO manager: Registered plugin: Alma guest
+ INFO manager: Registered plugin: PLD Linux guest
+ INFO manager: Registered plugin: Mint guest
+ INFO manager: Registered plugin: Alpine guest
+ INFO manager: Registered plugin: BSD-based guest
+ INFO manager: Registered plugin: SUSE guest
+ INFO manager: Registered plugin: VMware Photon guest
+ INFO manager: Registered plugin: NixOS guest
+ INFO manager: Registered plugin: TinyCore Linux guest.
+ INFO manager: Registered plugin: Darwin guest
+ INFO manager: Registered plugin: Fedora guest
+ INFO manager: Registered plugin: Amazon Linux guest
+ INFO manager: Registered plugin: OpenWrt guest
+ INFO manager: Registered plugin: Windows guest.
+ INFO manager: Registered plugin: Rocky guest
+ INFO manager: Registered plugin: Elementary guest
+ INFO manager: Registered plugin: OmniOS guest.
+ INFO manager: Registered plugin: Ubuntu guest
+ INFO manager: Registered plugin: Slackware guest
+ INFO manager: Registered plugin: Trisquel guest
+ INFO manager: Registered plugin: ALT Platform guest
+ INFO manager: Registered plugin: Funtoo guest
+ INFO manager: Registered plugin: CentOS guest
+ INFO manager: Registered plugin: atlas
+ INFO manager: Registered plugin: ftp
+ INFO manager: Registered plugin: noop
+ INFO manager: Registered plugin: local-exec
+ INFO manager: Registered plugin: heroku
+ INFO manager: Registered plugin: kernel
+ INFO manager: Registered plugin: docker-provider
+ INFO manager: Registered plugin: VirtualBox provider
+ INFO manager: Registered plugin: Hyper-V provider
+ INFO manager: Registered plugin: kernel
+ INFO manager: Registered plugin: windows ssh communicator
+ INFO manager: Registered plugin: ssh communicator
+ INFO manager: Registered plugin: winrm communicator
+ INFO vagrant: `vagrant` invoked: ["up", "--provision"]
+ INFO environment: Environment initialized (#<Vagrant::Environment:0x00007102d0cb5d38>)
+ INFO environment:   - cwd: /mnt/dat/i/prj/prg/ansible/strapi_ansible
+ INFO environment: Home path: /home/dayz/.vagrant.d
+ INFO environment: Local data path: /mnt/dat/i/prj/prg/ansible/strapi_ansible/.vagrant
+ INFO manager: Plugins:
+ INFO manager: Loading plugins...
+ INFO manager: Plugins:
+ INFO manager: Loading plugins...
+ INFO loader: Set :root = ["#<Pathname:/mnt/dat/i/prj/prg/ansible/strapi_ansible/Vagrantfile>"]
+ INFO loader: Loading configuration in order: [:home, :root]
+ INFO vmconfig: config class lookup for provider :docker gave us base class: VagrantPlugins::DockerProvider::Config
+ INFO loader: Set "860_machine_default" = []
+ INFO loader: Loading configuration in order: [:home, :root, "860_machine_default"]
+ INFO vmconfig: config class lookup for provider :docker gave us base class: VagrantPlugins::DockerProvider::Config
+ WARN vagrantfile: Failed to locate  with version 
+ WARN vagrantfile: Performing lookup with initial values  with version 
+ INFO environment: Running hook: environment_plugins_loaded
+ INFO runner: Running action: environment_plugins_loaded #<Vagrant::Action::Builder:0x00007102d0c808b8>
+ INFO environment: Running hook: environment_load
+ INFO runner: Running action: environment_load #<Vagrant::Action::Builder:0x00007102d0c2f850>
+ INFO cli: CLI: [] "up" ["--provision"]
+ INFO command: getting active machines
+ INFO environment: Getting machine: default (docker)
+ INFO environment: Uncached load of machine.
+ INFO subprocess: Starting process: ["/usr/bin/docker", "version"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO loader: Set "860_machine_default" = []
+ INFO loader: Loading configuration in order: [:home, :root, "860_machine_default"]
+ INFO vmconfig: config class lookup for provider :docker gave us base class: VagrantPlugins::DockerProvider::Config
+ WARN vagrantfile: Failed to locate  with version 
+ WARN vagrantfile: Performing lookup with initial values  with version 
+ INFO vmconfig: looking up provider config for: :docker
+ INFO vmconfig: provider config value that was stored: #<VagrantPlugins::DockerProvider::Config:0x00007102d0c59290 @build_args=[], @build_dir=nil, @git_repo=nil, @cmd=[], @compose=false, @compose_configuration={}, @create_args=[], @dockerfile=nil, @env={}, @expose=[], @force_host_vm=false, @has_ssh=true, @host_vm_build_dir_options=nil, @image="dockette/vagrant:debian-12-systemd", @name=nil, @links=[], @pull=false, @ports=[], @privileged=false, @remains_running=true, @stop_timeout=1, @volumes=[], @vagrant_machine=nil, @vagrant_vagrantfile=nil, @auth_server=nil, @email="", @username="", @password="", @__invalid_methods=#<Set: {}>>
+ INFO machine: Initializing machine: default
+ INFO machine:   - Provider: VagrantPlugins::DockerProvider::Provider
+ INFO machine:   - Box: 
+ INFO machine:   - Data dir: /mnt/dat/i/prj/prg/ansible/strapi_ansible/.vagrant/machines/default/docker
+ INFO machine: New machine ID: nil
+ INFO interface: Machine: metadata ["provider", :docker, {:target=>:default}]
+ INFO command: With machine: default (#<VagrantPlugins::DockerProvider::Provider:0x00007102d09bb1c8 @logger=#<Log4r::Logger:0x00007102d09bb128 @fullname="vagrant::provider::docker", @outputters=[], @additive=true, @name="docker", @path="vagrant::provider", @parent=#<VagrantLogger:0x00007102d0dedc00 @fullname="vagrant", @outputters=[#<Log4r::StderrOutputter:0x00007102d0ddf100 @name="stderr", @level=0, @formatter=#<Vagrant::Util::LoggingFormatter:0x00007102d16c6048 @formatter=#<Log4r::BasicFormatter:0x00007102d168b308 @depth=7>>, @out=#<IO:<STDERR>>>], @additive=true, @name="vagrant", @path="", @parent=#<Log4r::RootLogger:0x00007102d0ded908 @level=3, @outputters=[]>, @level=3, @trace=false>, @level=3, @trace=false>, @machine=#<Vagrant::Machine: default (VagrantPlugins::DockerProvider::Provider)>, @cap_logger=#<Log4r::Logger:0x00007102d09c4020 @fullname="vagrant::capability_host::vagrantplugins::dockerprovider::provider", @outputters=[], @additive=true, @name="provider", @path="vagrant::capability_host::vagrantplugins::dockerprovider", @parent=#<VagrantLogger:0x00007102d0dedc00 @fullname="vagrant", @outputters=[#<Log4r::StderrOutputter:0x00007102d0ddf100 @name="stderr", @level=0, @formatter=#<Vagrant::Util::LoggingFormatter:0x00007102d16c6048 @formatter=#<Log4r::BasicFormatter:0x00007102d168b308 @depth=7>>, @out=#<IO:<STDERR>>>], @additive=true, @name="vagrant", @path="", @parent=#<Log4r::RootLogger:0x00007102d0ded908 @level=3, @outputters=[]>, @level=3, @trace=false>, @level=3, @trace=false>, @cap_host_chain=[[:docker, #<#<Class:0x00007102d09c4610>:0x00007102d09a56e8>]], @cap_args=[#<Vagrant::Machine: default (VagrantPlugins::DockerProvider::Provider)>], @cap_caps={:docker=>#<Vagrant::Registry:0x00007102d09c4390 @items={:public_address=>#<Proc:0x00007102d0d574a8 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/docker/plugin.rb:63>, :proxy_machine=>#<Proc:0x00007102d0d573e0 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/docker/plugin.rb:68>, :has_communicator=>#<Proc:0x00007102d0d57318 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/docker/plugin.rb:73>}, @results_cache={}>, :virtualbox=>#<Vagrant::Registry:0x00007102d09c42f0 @items={:forwarded_ports=>#<Proc:0x00007102d0d51cb0 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/virtualbox/plugin.rb:30>, :nic_mac_addresses=>#<Proc:0x00007102d0d51c88 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/virtualbox/plugin.rb:35>, :public_address=>#<Proc:0x00007102d0d51c60 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/virtualbox/plugin.rb:40>, :configure_disks=>#<Proc:0x00007102d0d51c38 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/virtualbox/plugin.rb:45>, :cleanup_disks=>#<Proc:0x00007102d0d51c10 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/virtualbox/plugin.rb:50>, :validate_disk_ext=>#<Proc:0x00007102d0d51be8 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/virtualbox/plugin.rb:55>, :default_disk_exts=>#<Proc:0x00007102d0d51bc0 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/virtualbox/plugin.rb:60>, :set_default_disk_ext=>#<Proc:0x00007102d0d51b98 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/virtualbox/plugin.rb:65>, :snapshot_list=>#<Proc:0x00007102d0d51b70 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/virtualbox/plugin.rb:70>}, @results_cache={}>, :hyperv=>#<Vagrant::Registry:0x00007102d09c4228 @items={:public_address=>#<Proc:0x00007102d0d4c9e0 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/hyperv/plugin.rb:28>, :snapshot_list=>#<Proc:0x00007102d0d4c968 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/hyperv/plugin.rb:33>, :configure_disks=>#<Proc:0x00007102d0d4c940 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/hyperv/plugin.rb:38>, :cleanup_disks=>#<Proc:0x00007102d0d4c918 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/hyperv/plugin.rb:43>, :validate_disk_ext=>#<Proc:0x00007102d0d4c8f0 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/hyperv/plugin.rb:48>, :default_disk_exts=>#<Proc:0x00007102d0d4c8c8 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/hyperv/plugin.rb:53>, :set_default_disk_ext=>#<Proc:0x00007102d0d4c8a0 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/hyperv/plugin.rb:58>}, @results_cache={}>}>)
+ INFO command: getting active machines
+ INFO environment: Getting machine: default (docker)
+ INFO environment: Returning cached machine: default (docker)
+ INFO command: With machine: default (#<VagrantPlugins::DockerProvider::Provider:0x00007102d09bb1c8 @logger=#<Log4r::Logger:0x00007102d09bb128 @fullname="vagrant::provider::docker", @outputters=[], @additive=true, @name="docker", @path="vagrant::provider", @parent=#<VagrantLogger:0x00007102d0dedc00 @fullname="vagrant", @outputters=[#<Log4r::StderrOutputter:0x00007102d0ddf100 @name="stderr", @level=0, @formatter=#<Vagrant::Util::LoggingFormatter:0x00007102d16c6048 @formatter=#<Log4r::BasicFormatter:0x00007102d168b308 @depth=7>>, @out=#<IO:<STDERR>>>], @additive=true, @name="vagrant", @path="", @parent=#<Log4r::RootLogger:0x00007102d0ded908 @level=3, @outputters=[]>, @level=3, @trace=false>, @level=3, @trace=false>, @machine=#<Vagrant::Machine: default (VagrantPlugins::DockerProvider::Provider)>, @cap_logger=#<Log4r::Logger:0x00007102d09c4020 @fullname="vagrant::capability_host::vagrantplugins::dockerprovider::provider", @outputters=[], @additive=true, @name="provider", @path="vagrant::capability_host::vagrantplugins::dockerprovider", @parent=#<VagrantLogger:0x00007102d0dedc00 @fullname="vagrant", @outputters=[#<Log4r::StderrOutputter:0x00007102d0ddf100 @name="stderr", @level=0, @formatter=#<Vagrant::Util::LoggingFormatter:0x00007102d16c6048 @formatter=#<Log4r::BasicFormatter:0x00007102d168b308 @depth=7>>, @out=#<IO:<STDERR>>>], @additive=true, @name="vagrant", @path="", @parent=#<Log4r::RootLogger:0x00007102d0ded908 @level=3, @outputters=[]>, @level=3, @trace=false>, @level=3, @trace=false>, @cap_host_chain=[[:docker, #<#<Class:0x00007102d09c4610>:0x00007102d09a56e8>]], @cap_args=[#<Vagrant::Machine: default (VagrantPlugins::DockerProvider::Provider)>], @cap_caps={:docker=>#<Vagrant::Registry:0x00007102d09c4390 @items={:public_address=>#<Proc:0x00007102d0d574a8 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/docker/plugin.rb:63>, :proxy_machine=>#<Proc:0x00007102d0d573e0 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/docker/plugin.rb:68>, :has_communicator=>#<Proc:0x00007102d0d57318 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/docker/plugin.rb:73>}, @results_cache={}>, :virtualbox=>#<Vagrant::Registry:0x00007102d09c42f0 @items={:forwarded_ports=>#<Proc:0x00007102d0d51cb0 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/virtualbox/plugin.rb:30>, :nic_mac_addresses=>#<Proc:0x00007102d0d51c88 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/virtualbox/plugin.rb:35>, :public_address=>#<Proc:0x00007102d0d51c60 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/virtualbox/plugin.rb:40>, :configure_disks=>#<Proc:0x00007102d0d51c38 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/virtualbox/plugin.rb:45>, :cleanup_disks=>#<Proc:0x00007102d0d51c10 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/virtualbox/plugin.rb:50>, :validate_disk_ext=>#<Proc:0x00007102d0d51be8 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/virtualbox/plugin.rb:55>, :default_disk_exts=>#<Proc:0x00007102d0d51bc0 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/virtualbox/plugin.rb:60>, :set_default_disk_ext=>#<Proc:0x00007102d0d51b98 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/virtualbox/plugin.rb:65>, :snapshot_list=>#<Proc:0x00007102d0d51b70 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/virtualbox/plugin.rb:70>}, @results_cache={}>, :hyperv=>#<Vagrant::Registry:0x00007102d09c4228 @items={:public_address=>#<Proc:0x00007102d0d4c9e0 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/hyperv/plugin.rb:28>, :snapshot_list=>#<Proc:0x00007102d0d4c968 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/hyperv/plugin.rb:33>, :configure_disks=>#<Proc:0x00007102d0d4c940 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/hyperv/plugin.rb:38>, :cleanup_disks=>#<Proc:0x00007102d0d4c918 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/hyperv/plugin.rb:43>, :validate_disk_ext=>#<Proc:0x00007102d0d4c8f0 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/hyperv/plugin.rb:48>, :default_disk_exts=>#<Proc:0x00007102d0d4c8c8 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/hyperv/plugin.rb:53>, :set_default_disk_ext=>#<Proc:0x00007102d0d4c8a0 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/hyperv/plugin.rb:58>}, @results_cache={}>}>)
+ INFO interface: info: Bringing machine 'default' up with 'docker' provider...
+Bringing machine 'default' up with 'docker' provider...
+ INFO batch_action: Enabling parallelization by default.
+ INFO batch_action: Disabling parallelization because only executing one action
+ INFO batch_action: Batch action will parallelize: false
+ INFO batch_action: Starting action: #<Vagrant::Machine:0x00007102d09e5068> up {:destroy_on_error=>true, :install_provider=>false, :parallel=>true, :provision_ignore_sentinel=>true, :provision_types=>nil, :provision_enabled=>true}
+ INFO machine: Calling action: up on provider Docker (new container)
+ INFO environment: Acquired process lock: dotlock
+ INFO environment: Released process lock: dotlock
+ INFO environment: Acquired process lock: machine-action-99c4233d2c9ff72d6f0283cc75388392
+ INFO interface: Machine: action ["up", "start", {:target=>:default}]
+ INFO host: Autodetecting host type for [#<Vagrant::Environment: /mnt/dat/i/prj/prg/ansible/strapi_ansible>]
+ INFO host: Detected: linux!
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Builder:0x00007102d09169c0>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::Call:0x00007102d0c53b38>
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Builder:0x00007102d09d1748>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::IsState:0x00007102d098e998>
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::IsState:0x00007102d098e998>
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Warden:0x00007102d0e2e520>
+ INFO warden: Calling IN action: #<Proc:0x00007102d0c7a670 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:116 (lambda)>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::HandleBox:0x00007102d0e2da80>
+ INFO handle_box: Skipping HandleBox because no box is set
+ INFO warden: Calling IN action: #<Proc:0x00007102d0dae370 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:116 (lambda)>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::ConfigValidate:0x00007102d0c53a20>
+ INFO warden: Calling IN action: #<VagrantPlugins::DockerProvider::Action::HostMachine:0x00007102d0c53958>
+ INFO hostmachine: No host machine needed.
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::Call:0x00007102d0c2e310>
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Builder:0x00007102d09e8e70>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::IsState:0x00007102d09ba278>
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::IsState:0x00007102d09ba278>
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Warden:0x00007102d0c5f168>
+ INFO warden: Calling IN action: #<Proc:0x00007102d09ca308 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:116 (lambda)>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::HandleBox:0x00007102d0c5ec90>
+ INFO handle_box: Skipping HandleBox because no box is set
+ INFO warden: Calling IN action: #<VagrantPlugins::DockerProvider::Action::DestroyBuildImage:0x00007102d0c729c0>
+ INFO warden: Calling IN action: #<Proc:0x00007102d0c415c8 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:116 (lambda)>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::Call:0x00007102d0c2e270>
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Builder:0x00007102d09cdfd0>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::IsState:0x00007102d0db61b0>
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::IsState:0x00007102d0db61b0>
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Warden:0x00007102d03cbf88>
+ INFO warden: Calling IN action: #<Proc:0x00007102d09bfb38 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:116 (lambda)>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::Call:0x00007102d03cbe98>
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Builder:0x00007102d09910d0>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::HasProvisioner:0x00007102d0e77018>
+ INFO provider: Execute capability: has_communicator [#<Vagrant::Machine: default (VagrantPlugins::DockerProvider::Provider)>] (docker)
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::HasProvisioner:0x00007102d0e77018>
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Warden:0x00007102d03fb7b0>
+ INFO warden: Calling IN action: #<Proc:0x00007102d03950a0 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:116 (lambda)>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::Provision:0x00007102d03fb5d0>
+ INFO provision: Ignoring sentinel check, forcing provision
+ INFO provision: Checking provisioner sentinel file...
+ INFO warden: Calling IN action: #<Proc:0x00007102d03d5f88 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:116 (lambda)>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::Call:0x00007102d03cbe20>
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Builder:0x00007102d0363e60>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::IsState:0x00007102d0dc23e8>
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::IsState:0x00007102d0dc23e8>
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Warden:0x00007102d09dce18>
+ INFO warden: Calling IN action: #<Proc:0x00007102d0e84ce0 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:116 (lambda)>
+ INFO warden: Calling IN action: #<VagrantPlugins::DockerProvider::Action::InitState:0x00007102d09dcb48>
+ INFO machine: New machine ID: nil
+ INFO machine: New machine ID: "preparing"
+ INFO warden: Calling IN action: #<Proc:0x00007102d09dca58 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:116 (lambda)>
+ INFO warden: Calling IN action: #<VagrantPlugins::DockerProvider::Action::HostMachineBuildDir:0x00007102d03cbda8>
+ INFO warden: Calling IN action: #<VagrantPlugins::DockerProvider::Action::HostMachineSyncFolders:0x00007102d03bcec0>
+ INFO warden: Calling IN action: #<VagrantPlugins::DockerProvider::Action::PrepareNFSValidIds:0x00007102d03ae190>
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO warden: Calling IN action: #<VagrantPlugins::SyncedFolderNFS::ActionCleanup:0x00007102d039f398>
+ INFO nfs: NFS pruning. Valid IDs: ["4babe16629dab633deb8a9a2a4e30d17b94fb08e294703a9ef58a01c164c954e"]
+ INFO host: Execute capability: nfs_prune [#<Vagrant::Environment: /mnt/dat/i/prj/prg/ansible/strapi_ansible>, #<Vagrant::UI::Prefixed:0x00007102d09fa210 @logger=#<Log4r::Logger:0x00007102d09fa198 @fullname="vagrant::ui::interface", @outputters=[], @additive=true, @name="interface", @path="vagrant::ui", @parent=#<VagrantLogger:0x00007102d0dedc00 @fullname="vagrant", @outputters=[#<Log4r::StderrOutputter:0x00007102d0ddf100 @name="stderr", @level=0, @formatter=#<Vagrant::Util::LoggingFormatter:0x00007102d16c6048 @formatter=#<Log4r::BasicFormatter:0x00007102d168b308 @depth=7>>, @out=#<IO:<STDERR>>>], @additive=true, @name="vagrant", @path="", @parent=#<Log4r::RootLogger:0x00007102d0ded908 @level=3, @outputters=[]>, @level=3, @trace=false>, @level=3, @trace=false>, @opts={}, @stdin=#<IO:<STDIN>>, @stdout=#<IO:<STDOUT>>, @stderr=#<IO:<STDERR>>, @prefix=:default, @ui=#<Vagrant::UI::Basic:0x00007102d0cb5978 @logger=#<Log4r::Logger:0x00007102d0cb58b0 @fullname="vagrant::ui::interface", @outputters=[], @additive=true, @name="interface", @path="vagrant::ui", @parent=#<VagrantLogger:0x00007102d0dedc00 @fullname="vagrant", @outputters=[#<Log4r::StderrOutputter:0x00007102d0ddf100 @name="stderr", @level=0, @formatter=#<Vagrant::Util::LoggingFormatter:0x00007102d16c6048 @formatter=#<Log4r::BasicFormatter:0x00007102d168b308 @depth=7>>, @out=#<IO:<STDERR>>>], @additive=true, @name="vagrant", @path="", @parent=#<Log4r::RootLogger:0x00007102d0ded908 @level=3, @outputters=[]>, @level=3, @trace=false>, @level=3, @trace=false>, @opts={:color=>:default}, @stdin=#<IO:<STDIN>>, @stdout=#<IO:<STDOUT>>, @stderr=#<IO:<STDERR>>, @lock=#<Thread::Mutex:0x00007102d0f03a18>>>, ["4babe16629dab633deb8a9a2a4e30d17b94fb08e294703a9ef58a01c164c954e"]] (linux)
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::SyncedFolderCleanup:0x00007102d03904d8>
+ INFO synced_folder_cleanup: Invoking synced folder cleanup for: docker
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::Delayed:0x00007102d0381348>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::SyncedFolders:0x00007102d03812a8>
+ INFO synced_folders: SyncedFolders loading from cache: false
+ INFO synced_folders: Synced Folder Implementation: docker
+ INFO synced_folders:   - /vagrant_data: vagrant_data => /vagrant_data
+ INFO synced_folders:   - /vagrant: . => /vagrant
+ INFO synced_folders: Invoking synced folder prepare for: docker
+ INFO warden: Calling IN action: #<VagrantPlugins::DockerProvider::Action::PrepareNFSSettings:0x00007102d0371fb0>
+ INFO warden: Calling IN action: #<VagrantPlugins::DockerProvider::Action::PrepareNetworks:0x00007102d0362b28>
+ INFO environment: Acquired process lock: dotlock
+ INFO environment: Released process lock: dotlock
+ INFO environment: Acquired process lock: docker-network-create
+ INFO interface: info: Creating and configuring docker networks...
+ INFO interface: info: ==> default: Creating and configuring docker networks...
+==> default: Creating and configuring docker networks...
+ INFO environment: Released process lock: docker-network-create
+ INFO environment: Acquired process lock: dotlock
+ INFO environment: Released process lock: dotlock
+ INFO warden: Calling IN action: #<VagrantPlugins::DockerProvider::Action::Login:0x00007102d0f0dd88>
+ INFO warden: Calling IN action: #<VagrantPlugins::DockerProvider::Action::Build:0x00007102d0da0838>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::Call:0x00007102d0d34480>
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Builder:0x00007102d037d1d0>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::IsState:0x00007102d0d3d1c0>
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::IsState:0x00007102d0d3d1c0>
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Warden:0x00007102d09635e0>
+ INFO warden: Calling IN action: #<Proc:0x00007102d0384d40 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:116 (lambda)>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::EnvSet:0x00007102d0963068>
+ INFO warden: Calling IN action: #<VagrantPlugins::DockerProvider::Action::HostMachinePortWarning:0x00007102d0962af0>
+ INFO warden: Calling IN action: #<VagrantPlugins::DockerProvider::Action::HostMachinePortChecker:0x00007102d0962398>
+ INFO warden: Calling IN action: #<VagrantPlugins::DockerProvider::Action::ForwardedPorts:0x00007102d0ec7ba8>
+ INFO warden: Calling IN action: #<VagrantPlugins::DockerProvider::Action::PrepareForwardedPortCollisionParams:0x00007102d0ec77c0>
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "inspect", "4babe16629dab633deb8a9a2a4e30d17b94fb08e294703a9ef58a01c164c954e"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::HandleForwardedPortCollisions:0x00007102d0ec75b8>
+ INFO environment: Acquired process lock: dotlock
+ INFO environment: Released process lock: dotlock
+ INFO environment: Acquired process lock: fpcollision
+ INFO handle_port_collisions: Detecting any forwarded port collisions...
+ INFO environment: Released process lock: fpcollision
+ INFO environment: Acquired process lock: dotlock
+ INFO environment: Released process lock: dotlock
+ INFO warden: Calling IN action: #<VagrantPlugins::DockerProvider::Action::Pull:0x00007102d0e562f0>
+ INFO warden: Calling IN action: #<VagrantPlugins::DockerProvider::Action::Create:0x00007102d0e56070>
+ INFO interface: output: Creating the container...
+ INFO interface: output: ==> default: Creating the container...
+==> default: Creating the container...
+ INFO interface: detail:   Name: strapi_ansible_default_1724056619
+ INFO interface: detail:     default:   Name: strapi_ansible_default_1724056619
+    default:   Name: strapi_ansible_default_1724056619
+ INFO interface: detail:  Image: dockette/vagrant:debian-12-systemd
+ INFO interface: detail:     default:  Image: dockette/vagrant:debian-12-systemd
+    default:  Image: dockette/vagrant:debian-12-systemd
+ INFO interface: detail: Volume: /mnt/dat/i/prj/prg/ansible/strapi_ansible/vagrant_data:/vagrant_data
+ INFO interface: detail:     default: Volume: /mnt/dat/i/prj/prg/ansible/strapi_ansible/vagrant_data:/vagrant_data
+    default: Volume: /mnt/dat/i/prj/prg/ansible/strapi_ansible/vagrant_data:/vagrant_data
+ INFO interface: detail: Volume: /mnt/dat/i/prj/prg/ansible/strapi_ansible:/vagrant
+ INFO interface: detail:     default: Volume: /mnt/dat/i/prj/prg/ansible/strapi_ansible:/vagrant
+    default: Volume: /mnt/dat/i/prj/prg/ansible/strapi_ansible:/vagrant
+ INFO interface: detail:   Port: 127.0.0.1:2222:22
+ INFO interface: detail:     default:   Port: 127.0.0.1:2222:22
+    default:   Port: 127.0.0.1:2222:22
+ INFO subprocess: Starting process: ["/usr/bin/docker", "run", "--name", "strapi_ansible_default_1724056619", "-d", "-p", "127.0.0.1:2222:22", "-v", "/mnt/dat/i/prj/prg/ansible/strapi_ansible/vagrant_data:/vagrant_data", "-v", "/mnt/dat/i/prj/prg/ansible/strapi_ansible:/vagrant", "dockette/vagrant:debian-12-systemd"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO interface: detail:  
+Container created: 466adc798a7d11b0
+ INFO interface: detail:     default:  
+    default: Container created: 466adc798a7d11b0
+    default:  
+    default: Container created: 466adc798a7d11b0
+ INFO machine: New machine ID: "466adc798a7d11b0f1dca1113a18fc380555ab1570156da6e014476c31d14ce5"
+ INFO warden: Calling IN action: #<VagrantPlugins::DockerProvider::Action::WaitForRunning:0x00007102d0e55df0>
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO warden: Calling IN action: #<Proc:0x00007102d0e93bc8 /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:116 (lambda)>
+ INFO warden: Calling IN action: #<VagrantPlugins::DockerProvider::Action::ConnectNetworks:0x00007102d0d342f0>
+ INFO interface: info: Enabling network interfaces...
+ INFO interface: info: ==> default: Enabling network interfaces...
+==> default: Enabling network interfaces...
+ INFO warden: Calling IN action: #<VagrantPlugins::DockerProvider::Action::Start:0x00007102d0d71178>
+ INFO interface: output: Starting container...
+ INFO interface: output: ==> default: Starting container...
+==> default: Starting container...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO warden: Calling IN action: #<VagrantPlugins::DockerProvider::Action::WaitForRunning:0x00007102d0d71060>
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO interface: output: Waiting for container to enter "running" state...
+ INFO interface: output: ==> default: Waiting for container to enter "running" state...
+==> default: Waiting for container to enter "running" state...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ INFO subprocess: Starting process: ["/usr/bin/docker", "ps", "-a", "-q", "--no-trunc"]
+ INFO subprocess: Command not in installer, restoring original environment...
+ERROR warden: Error occurred: The container started either never left the "stopped" state or
+very quickly reverted to the "stopped" state. This is usually
+because the container didn't execute a command that kept it running,
+and usually indicates a misconfiguration.
+
+If you meant for this container to not remain running, please
+set the Docker provider configuration "remains_running" to "false":
+
+  config.vm.provider "docker" do |d|
+    d.remains_running = false
+  end
+ INFO warden: Beginning recovery process...
+ INFO warden: Calling recover: #<Vagrant::Action::Builtin::Call:0x00007102d0d34480>
+ INFO warden: Beginning recovery process...
+ INFO warden: Calling recover: #<Vagrant::Action::Builtin::HandleForwardedPortCollisions:0x00007102d0ec75b8>
+ INFO warden: Recovery complete.
+ INFO warden: Calling recover: #<Vagrant::Action::Builtin::Call:0x00007102d03cbe20>
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Calling recover: #<Vagrant::Action::Builtin::Call:0x00007102d03cbe98>
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ERROR warden: Error occurred: The container started either never left the "stopped" state or
+very quickly reverted to the "stopped" state. This is usually
+because the container didn't execute a command that kept it running,
+and usually indicates a misconfiguration.
+
+If you meant for this container to not remain running, please
+set the Docker provider configuration "remains_running" to "false":
+
+  config.vm.provider "docker" do |d|
+    d.remains_running = false
+  end
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ERROR warden: Error occurred: The container started either never left the "stopped" state or
+very quickly reverted to the "stopped" state. This is usually
+because the container didn't execute a command that kept it running,
+and usually indicates a misconfiguration.
+
+If you meant for this container to not remain running, please
+set the Docker provider configuration "remains_running" to "false":
+
+  config.vm.provider "docker" do |d|
+    d.remains_running = false
+  end
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ERROR warden: Error occurred: The container started either never left the "stopped" state or
+very quickly reverted to the "stopped" state. This is usually
+because the container didn't execute a command that kept it running,
+and usually indicates a misconfiguration.
+
+If you meant for this container to not remain running, please
+set the Docker provider configuration "remains_running" to "false":
+
+  config.vm.provider "docker" do |d|
+    d.remains_running = false
+  end
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ERROR warden: Error occurred: The container started either never left the "stopped" state or
+very quickly reverted to the "stopped" state. This is usually
+because the container didn't execute a command that kept it running,
+and usually indicates a misconfiguration.
+
+If you meant for this container to not remain running, please
+set the Docker provider configuration "remains_running" to "false":
+
+  config.vm.provider "docker" do |d|
+    d.remains_running = false
+  end
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ERROR warden: Error occurred: The container started either never left the "stopped" state or
+very quickly reverted to the "stopped" state. This is usually
+because the container didn't execute a command that kept it running,
+and usually indicates a misconfiguration.
+
+If you meant for this container to not remain running, please
+set the Docker provider configuration "remains_running" to "false":
+
+  config.vm.provider "docker" do |d|
+    d.remains_running = false
+  end
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ERROR warden: Error occurred: The container started either never left the "stopped" state or
+very quickly reverted to the "stopped" state. This is usually
+because the container didn't execute a command that kept it running,
+and usually indicates a misconfiguration.
+
+If you meant for this container to not remain running, please
+set the Docker provider configuration "remains_running" to "false":
+
+  config.vm.provider "docker" do |d|
+    d.remains_running = false
+  end
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ERROR warden: Error occurred: The container started either never left the "stopped" state or
+very quickly reverted to the "stopped" state. This is usually
+because the container didn't execute a command that kept it running,
+and usually indicates a misconfiguration.
+
+If you meant for this container to not remain running, please
+set the Docker provider configuration "remains_running" to "false":
+
+  config.vm.provider "docker" do |d|
+    d.remains_running = false
+  end
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ERROR warden: Error occurred: The container started either never left the "stopped" state or
+very quickly reverted to the "stopped" state. This is usually
+because the container didn't execute a command that kept it running,
+and usually indicates a misconfiguration.
+
+If you meant for this container to not remain running, please
+set the Docker provider configuration "remains_running" to "false":
+
+  config.vm.provider "docker" do |d|
+    d.remains_running = false
+  end
+ INFO warden: Beginning recovery process...
+ INFO warden: Calling recover: #<Vagrant::Action::Builtin::Call:0x00007102d0c2e270>
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Calling recover: #<Vagrant::Action::Builtin::Call:0x00007102d0c2e310>
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Calling recover: #<Vagrant::Action::Builtin::Call:0x00007102d0c53b38>
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Recovery complete.
+ERROR warden: Error occurred: The container started either never left the "stopped" state or
+very quickly reverted to the "stopped" state. This is usually
+because the container didn't execute a command that kept it running,
+and usually indicates a misconfiguration.
+
+If you meant for this container to not remain running, please
+set the Docker provider configuration "remains_running" to "false":
+
+  config.vm.provider "docker" do |d|
+    d.remains_running = false
+  end
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ERROR warden: Error occurred: The container started either never left the "stopped" state or
+very quickly reverted to the "stopped" state. This is usually
+because the container didn't execute a command that kept it running,
+and usually indicates a misconfiguration.
+
+If you meant for this container to not remain running, please
+set the Docker provider configuration "remains_running" to "false":
+
+  config.vm.provider "docker" do |d|
+    d.remains_running = false
+  end
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ERROR warden: Error occurred: The container started either never left the "stopped" state or
+very quickly reverted to the "stopped" state. This is usually
+because the container didn't execute a command that kept it running,
+and usually indicates a misconfiguration.
+
+If you meant for this container to not remain running, please
+set the Docker provider configuration "remains_running" to "false":
+
+  config.vm.provider "docker" do |d|
+    d.remains_running = false
+  end
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ERROR warden: Error occurred: The container started either never left the "stopped" state or
+very quickly reverted to the "stopped" state. This is usually
+because the container didn't execute a command that kept it running,
+and usually indicates a misconfiguration.
+
+If you meant for this container to not remain running, please
+set the Docker provider configuration "remains_running" to "false":
+
+  config.vm.provider "docker" do |d|
+    d.remains_running = false
+  end
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO environment: Released process lock: machine-action-99c4233d2c9ff72d6f0283cc75388392
+ INFO environment: Running hook: environment_unload
+ INFO runner: Running action: environment_unload #<Vagrant::Action::Builder:0x00007102d02992a0>
+ERROR vagrant: Vagrant experienced an error! Details:
+ERROR vagrant: #<VagrantPlugins::DockerProvider::Errors::StateStopped: The container started either never left the "stopped" state or
+very quickly reverted to the "stopped" state. This is usually
+because the container didn't execute a command that kept it running,
+and usually indicates a misconfiguration.
+
+If you meant for this container to not remain running, please
+set the Docker provider configuration "remains_running" to "false":
+
+  config.vm.provider "docker" do |d|
+    d.remains_running = false
+  end>
+ERROR vagrant: The container started either never left the "stopped" state or
+very quickly reverted to the "stopped" state. This is usually
+because the container didn't execute a command that kept it running,
+and usually indicates a misconfiguration.
+
+If you meant for this container to not remain running, please
+set the Docker provider configuration "remains_running" to "false":
+
+  config.vm.provider "docker" do |d|
+    d.remains_running = false
+  end
+ERROR vagrant: /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/docker/action/wait_for_running.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/docker/action/start.rb:19:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/docker/action/connect_networks.rb:75:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:117:in `block in finalize_action'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/docker/action/wait_for_running.rb:30:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/docker/action/create.rb:88:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/docker/action/pull.rb:19:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/builtin/handle_forwarded_port_collisions.rb:55:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/docker/action/prepare_forwarded_port_collision_params.rb:39:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/docker/action/forwarded_ports.rb:31:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/docker/action/host_machine_port_checker.rb:17:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/docker/action/host_machine_port_warning.rb:14:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/builtin/env_set.rb:22:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:117:in `block in finalize_action'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/builder.rb:183:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/runner.rb:104:in `block in run'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/util/busy.rb:22:in `busy'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/runner.rb:104:in `run'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/builtin/call.rb:56:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/docker/action/build.rb:27:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/docker/action/login.rb:35:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/docker/action/prepare_networks.rb:367:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/docker/action/prepare_nfs_settings.rb:18:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/builtin/synced_folders.rb:90:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/builtin/delayed.rb:22:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/builtin/synced_folder_cleanup.rb:31:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/synced_folders/nfs/action_cleanup.rb:28:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/docker/action/prepare_nfs_valid_ids.rb:17:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/docker/action/host_machine_sync_folders.rb:26:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/docker/action/host_machine_build_dir.rb:22:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:117:in `block in finalize_action'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/docker/action/init_state.rb:18:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:117:in `block in finalize_action'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/builder.rb:183:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/runner.rb:104:in `block in run'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/util/busy.rb:22:in `busy'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/runner.rb:104:in `run'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/builtin/call.rb:56:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:117:in `block in finalize_action'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/builtin/provision.rb:83:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:117:in `block in finalize_action'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/builder.rb:183:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/runner.rb:104:in `block in run'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/util/busy.rb:22:in `busy'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/runner.rb:104:in `run'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/builtin/call.rb:56:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:117:in `block in finalize_action'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/builder.rb:183:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/runner.rb:104:in `block in run'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/util/busy.rb:22:in `busy'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/runner.rb:104:in `run'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/builtin/call.rb:56:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:117:in `block in finalize_action'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/docker/action/destroy_build_image.rb:46:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/builtin/handle_box.rb:28:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:117:in `block in finalize_action'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/builder.rb:183:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/runner.rb:104:in `block in run'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/util/busy.rb:22:in `busy'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/runner.rb:104:in `run'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/builtin/call.rb:56:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/plugins/providers/docker/action/host_machine.rb:21:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/builtin/config_validate.rb:28:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:117:in `block in finalize_action'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/builtin/handle_box.rb:28:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:117:in `block in finalize_action'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/builder.rb:183:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/runner.rb:104:in `block in run'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/util/busy.rb:22:in `busy'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/runner.rb:104:in `run'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/builtin/call.rb:56:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/warden.rb:38:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/builder.rb:183:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/runner.rb:104:in `block in run'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/util/busy.rb:22:in `busy'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/action/runner.rb:104:in `run'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/machine.rb:247:in `action_raw'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/machine.rb:216:in `block in action'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/environment.rb:649:in `lock'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/machine.rb:202:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/machine.rb:202:in `action'
+/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/lib/vagrant/batch_action.rb:89:in `block (2 levels) in run'
+ INFO interface: error: The container started either never left the "stopped" state or
+very quickly reverted to the "stopped" state. This is usually
+because the container didn't execute a command that kept it running,
+and usually indicates a misconfiguration.
+
+If you meant for this container to not remain running, please
+set the Docker provider configuration "remains_running" to "false":
+
+  config.vm.provider "docker" do |d|
+    d.remains_running = false
+  end
+The container started either never left the "stopped" state or
+very quickly reverted to the "stopped" state. This is usually
+because the container didn't execute a command that kept it running,
+and usually indicates a misconfiguration.
+
+If you meant for this container to not remain running, please
+set the Docker provider configuration "remains_running" to "false":
+
+  config.vm.provider "docker" do |d|
+    d.remains_running = false
+  end
+ INFO interface: Machine: error-exit ["VagrantPlugins::DockerProvider::Errors::StateStopped", "The container started either never left the \"stopped\" state or\nvery quickly reverted to the \"stopped\" state. This is usually\nbecause the container didn't execute a command that kept it running,\nand usually indicates a misconfiguration.\n\nIf you meant for this container to not remain running, please\nset the Docker provider configuration \"remains_running\" to \"false\":\n\n  config.vm.provider \"docker\" do |d|\n    d.remains_running = false\n  end"]
