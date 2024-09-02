@@ -11,3 +11,4 @@
 (def containers (c/client (merge data {:category :containers})))
 
 (defn images-cfg [_] images)
+(defn get-version [_] (edit/get-collection "versions"))
