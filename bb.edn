@@ -1,0 +1,14 @@
+{
+ :deps {ohmrun/lepew {:local/root "."}} 
+ :tasks {:requires ([babashka.fs :as fs] [babashka.process :as proc]) 
+         repl-server (proc/shell "bb" "--init" "init.clj" "nrepl-server")
+         docker.build (proc/shell "docker" "build" "." "--tag" "lepew") 
+        ;;  docker.run (proc/shell {:out :inherit} "docker" "run" "--rm" "-it" "lepew")
+         docker.run (proc/shell { :out :inherit } "docker" "run" "-p" "7680:7680" "--name" "lepew" "--rm" "-it" "lepew") 
+        ;; docker.run (proc/shell {:out :inherit} "docker" "run" "--network" "host" "--name" "lepew" "--rm" "-it" "lepew")
+
+         vagrant.destroy (proc/shell "vagrant" "destroy" "--f")
+         vagrant.up (proc/shell "vagrant" "up" "--provision")
+         vagrant.recycle ((proc/shell "bb" "vagrant.destroy" "&&" "bb" "vagrant.up"))
+         }
+ }

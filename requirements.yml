@@ -1,4 +1,0 @@
-
-- name: nginxinc.nginx
-  scm: git
-  src: https://github.com/nginxinc/ansible-role-nginx

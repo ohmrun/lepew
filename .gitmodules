@@ -1,0 +1,3 @@
+[submodule "server"]
+	path = srv
+	url = https://github.com/maitag/peote-server.git

@@ -1,26 +1,27 @@
 # - import_playbook: ansible/nginx.yml
-- hosts: all
+- hosts: localhost
   roles:
-    - amtega.environment
   vars:
-    environment_config:
-      LC_ALL: C
-  become: true
+  become: false    
   tasks:
-    - name: Setup Apt
-      ansible.builtin.command:
-        cmd: apt update
-    # - name: Install NGINX
-    #   ansible.builtin.include_role:
-    #     name: nginxinc.nginx
-    # - name: Configure NGINX
-    #   ansible.builtin.copy:
-    #     src: ansible_data/etc/nginx/conf.d/upstream.conf
-    #     dest: /etc/nginx/conf.d/upstream.conf
-    - name: Install VFox
-      ansible.builtin.shell:
-        cmd: |
-          echo "deb [trusted=yes] https://apt.fury.io/versionfox/ /" | sudo tee /etc/apt/sources.list.d/versionfox.list
-          sudo apt-get update
-          sudo apt-get install vfox 
-        creates: /usr/bin/vfox
+    - ansible.builtin.shell:
+        cmd: export "PATH=$PATH:{{ ansible_env.HOME }}/.local/bin:{{ ansible_env.HOME }}/.asdf/bin:{{ ansible_env.HOME }}/.asdf/shims:{{ ansible_env.PATH }}" 
+    - name: Install OS Dependencies
+      become: true  
+      ansible.builtin.package:
+        name:
+          - procps
+          - iproute2
+          - curl
+          - wget
+          - tar
+          - perl
+          - libpoe-perl 
+          - cpanminus
+          - lsof
+          - net-tools
+          - htop
+    - name: Install CPAN Dependencies
+      community.general.cpanm:
+        name: Protocol::WebSocket
+      
