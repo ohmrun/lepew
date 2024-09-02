@@ -1,6 +1,6 @@
 # Lepew
 
-Dockerized Peote Server
+Dockerized [Peote Server](https://github.com/maitag/peote-server)
 
 ## Install
 
