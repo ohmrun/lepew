@@ -13,6 +13,6 @@ COPY ./srv /srv
 EXPOSE 7680/udp
 EXPOSE 7680/tcp
 
-COPY peote-server.conf /srv
+COPY peote-server.conf /srv/peote-server.conf
 WORKDIR /srv
 ENTRYPOINT ["perl", "-I.", "peote-server.pl"]
